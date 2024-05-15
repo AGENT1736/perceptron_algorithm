@@ -1,24 +1,15 @@
 import random as rand
 
-weights = []
-#this is the random numbers that the weights are going to be
-w1 = rand.randint(0,5)
+features = int(input("Enter number of features: "))
 
-w2 = rand.randint(0,5)
+# labels = int(input("Enter number of labels: "))
 
-w3 = rand.randint(0,5)
+itrs = int(input("Enter number of iterations"))
 
-weights.append(w1)
-weights.append(w2)
-weights.append(w3)
+numOfPoints = int(input("Enter number of points"))
 
-print ("The initail weights are: ",weights)
+points = [[] for i in range(numOfPoints)]
 
-maxNoOfIterations = 6
+labels = [0,1]
 
-noOfFeatures = 2
-
-for i in range(maxNoOfIterations):
-    print("Data added!")
-
-print("The final weights are:",weights)
+results = [[] for i in range(features)]
